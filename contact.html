@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Especies</title>
-    <link rel="stylesheet" href="css/css_especies.css"/>
+    <link rel="stylesheet" href="./css/css_especies.css"/>
+    <link rel="stylesheet" href="./css/form_especies.css">
 
 </head>
 <body>
@@ -17,28 +18,30 @@
     </ul>
 </div>
 
-<form  class="form" action="" method="">
-    <legend id="form_legend">Contact</legend>
-    <div>
-        <label for="nom">El teu nom *</label>
-        <input type="text" name="name" id="name">
-    </div>
-    <div>
-        <label for="correu">El teu correu electronic *</label>
-        <input type="email" name="correu" id="correu">
-    </div>
-    <div>
-        <label for="titol">Titol *</label>
-        <input type="text" name="titol" id="titol">
-    </div>
-    <div>
-        <label for="mensaje">Missatge *</label>
-        <textarea name="textarea" id="textarea"></textarea>
-    </div>
-        
-    
-</form>
+<div class="form-container">
+    <p class="title">Formulario</p>
+    <form id="formId" action="#" method="get">
+        <div class="input-group">
+        <label for="nom">Tu Nombre:</label><br>
+        <input type="text" id="nom" name="nom" ><br>
+        <span id="error-nom" class="error-message"></span><br><br>
+        </div>
 
+        <div class="input-group">
+        <label for="email">Tu Email:</label><br>
+        <input type="email" id="email" name="email" ><br>
+        <span id="error-email" class="error-message"></span><br><br>
+        </div>
+
+        <div class="input-group">
+        <label for="titulo">Titulo:</label><br>
+        <input type="text" id="titulo" name="titulo" ><br>
+        <span id="error-tit" class="error-message"></span><br><br>
+        </div>
+        
+        <input class="sign" type="submit" value="Enviar">
+    </form>
+</div>
 
 <div>
     <h2>Llicència</h2>
@@ -53,5 +56,8 @@
         <li><a href="caretta_caretta.html">Diaspora</a></li>
     </ul>
 </div>
+<script src="./js/form_especies.js" type="module"></script>
+
 </body>
+
 </html>
